@@ -3,38 +3,91 @@
 *{
     margin: 0px;
     padding: 0px;
+    max-width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+body{
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
 header{
-    background-color: rgb(11, 61, 145);
-    background: linear-gradient(to bottom, rgb(11, 61, 145), rgb(0, 87, 238));
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 20px 20px 10px 20px;
+    max-width: 100%;
 }
 header h1{
     padding-bottom: 20px;
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.75);
 }
-header h2{
-    padding-bottom: 15px;
+header img{
+    width: 100%;
+    border-radius: 10px;
 }
+
 header nav{
-    
+    padding: 2px;
+    background-color: rgb(20, 61, 194);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
 }
 header nav > a{
     color: white;
     text-decoration: none;
     text-shadow: 0px 0px 5px rgba(0, 25, 51, 0.75);
     font-weight: bolder;
-    margin-left: 7px;
-    margin-right: 7px;
-    padding: 3px;
+    margin-left: 6px;
+    margin-right: 6px;
+    padding: 5px;
     transition-duration: 0.4s;
 }
 header nav > a:hover{
-    background-color: rgb(122, 122, 255);
-    color: rgb(32, 32, 182);
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.856);
+    background-color: rgb(80, 80, 255);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     border-radius: 7px;
-
+}
+main{
+    padding: 20px;
+}
+section#inicio{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+section#inicio div{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    max-width: 80%;
+    padding: 25px 10px;
+}
+section#inicio div img{
+    width: 250px;
+}
+section#inicio div p{
+    font-size: 1.2em;
+    max-width: 400px;
+}
+.buybutton{
+    margin: auto;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    color: white;
+    background: linear-gradient(to bottom, rgb(0, 123, 255), rgb(15, 74, 136));
+    box-shadow: 0px 0px 15px rgba(49, 149, 255, 0.623);
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    transition-duration: 0.4s;
+}
+.buybutton:hover{
+    background: linear-gradient(to bottom, rgb(0, 93, 192), rgb(10, 49, 90));
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
 }
