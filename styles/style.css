@@ -15,24 +15,23 @@ body{
 header{
     color: white;
     text-align: center;
-    padding: 20px 20px 10px 20px;
+    /*padding: 20px 20px 10px 20px;*/
     max-width: 100%;
 }
-header h1{
+.highlight{
     padding-bottom: 20px;
     text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.75);
-    font-size: 1.45em;
+    font-size: 1.5em;
 }
 header img{
     width: 100%;
-    border-radius: 10px;
 }
 
 header nav{
     padding: 2px;
     background-color: rgb(20, 61, 194);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
 }
 header nav > a{
     color: white;
@@ -54,18 +53,21 @@ header nav > a:hover{
 }
 main{
     margin: auto;
-    padding: 20px 0px;
+    padding: 50px 0px;
     min-width: 280px;
     max-width: 400px;
 }
-section#inicio{
+/*section#inicio{*/
+section{
+    padding: 0px 0px 50px 0px;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
-section#inicio h2{
-    font-size: 1.4em;
-    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.75);
+hr{
+    width: 100%;
+    margin-bottom: 45px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.75);
 }
 section#inicio div{
     margin: auto;
@@ -83,7 +85,6 @@ section#inicio div img{
 section#inicio div p{
     font-size: 1.1em;
     width: 100%;
-    
 }
 .buybutton{
     margin: auto;
@@ -103,4 +104,26 @@ section#inicio div p{
 .buybutton:hover{
     background: linear-gradient(to bottom, rgb(0, 93, 192), rgb(10, 49, 90));
     text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+}
+section#beneficios{
+    align-items: center;
+}
+section#beneficios ul{
+    padding-top: 25px;
+    text-align: left;
+    list-style: none;
+}
+section#beneficios ul li{
+    padding-left: 35px;
+    margin-bottom: 15px;
+    position: relative;
+}
+section#beneficios ul li::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/CheckCircle.png);
+    background-size: cover;
 }
