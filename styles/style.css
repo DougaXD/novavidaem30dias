@@ -27,7 +27,7 @@ header img{
     width: 100%;
 }
 header nav{
-    padding: 2px;
+    padding: 4px 0px;
     background-color: rgb(20, 61, 194);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
@@ -51,7 +51,7 @@ header nav > a:hover{
 }
 main{
     margin: auto;
-    padding: 50px 0px;
+    padding: 50px 0px 10px 0px;
     min-width: 280px;
     max-width: 400px;
 }
@@ -95,8 +95,9 @@ section#inicio div{
     color: white;
     background: linear-gradient(to bottom, rgb(0, 123, 255), rgb(15, 74, 136));
     box-shadow: 0px 0px 15px rgba(49, 149, 255, 0.623);
-    width: 200px;
-    height: 50px;
+    width: 210px;
+    height: 55px;
+    padding: 3px;
     border-radius: 15px;
     transition-duration: 0.4s;
 }
@@ -167,13 +168,13 @@ section#depoimentos .whitebg p.rate{
     padding: 20px;
 }
 section#depoimentos .buybutton{
-    margin-top: 25px;
+    margin-top: 45px;
 }
 section#comprar .textarea{
     padding: 25px 0px 10px 0px;
 }
 section#comprar .ebookimg{
-    padding-bottom: 10px;
+    padding: 15px 0px;
 }
 section#comprar s{
     color: rgb(200, 0, 0);
@@ -183,12 +184,14 @@ section#comprar #price{
     color: rgb(0, 190, 0);
     font-weight: bolder;
     font-size: 1.25em;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 footer{
     background-color: midnightblue;
     padding: 35px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 footer p{
     background-color: rgb(43, 43, 197);
@@ -213,4 +216,47 @@ footer a:hover{
     background-color: rgb(79, 79, 230);
     border-radius: 15px;
     box-shadow: 0px 0px 15px rgba(0, 60, 255, 0.555);
+}
+
+@media only screen and (min-width: 768px){
+    header nav{
+        padding: 5px;
+    }
+    header nav a{
+        font-size: 1em;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px;
+    }
+    main{
+        max-width: 600px;
+    }
+    .ebookimg{
+        max-width: 185px;
+    }
+    .highlight{
+        font-size: 1.6em;
+    }
+    p.textarea{
+        font-size: 1.2em;
+    }
+    section#beneficios ul{
+        font-size: 1.25em;
+    }
+    section#beneficios ul li:before{
+        width: 25px;
+        height: 25px;
+    }
+    section#depoimentos .whitebg{
+        width: 435px;
+    }
+    section#comprar s{
+        font-size: 1.15em;
+    }
+    section#comprar #price{
+        font-size: 1.45em;
+    }
+    footer{
+        display: block;
+    }
 }
