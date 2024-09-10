@@ -26,12 +26,10 @@ header{
 header img{
     width: 100%;
 }
-
 header nav{
     padding: 2px;
     background-color: rgb(20, 61, 194);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-    border-radius: 0px 0px 10px 10px;
 }
 header nav > a{
     color: white;
@@ -79,11 +77,11 @@ section#inicio div{
     max-width: 100%;
     padding: 25px 10px;
 }
-section#inicio div img{
+.ebookimg{
     width: 100%;
     max-width: 150px;
 }
-section#inicio div p{
+.textarea{
     font-size: 1.1em;
     width: 100%;
 }
@@ -110,7 +108,7 @@ section#beneficios{
     align-items: center;
 }
 section#beneficios ul{
-    padding-top: 25px;
+    padding: 25px 0px 25px 0px;
     text-align: left;
     list-style: none;
 }
@@ -131,6 +129,7 @@ section#beneficios ul li::before{
 section#depoimentos .whitebg{
     width: 380px;
     height: 200px;
+    margin-top: 25px;
     background-color: white;
     border-radius: 10px;
 }
@@ -139,16 +138,24 @@ section#depoimentos .rating{
     padding: 5px;
     border-radius: 10px 10px 0px 0px;
 }
-section#depoimentos #rating1{
+section#depoimentos #rating1, #rating2, #rating3{
     width: 35px;
     height: 35px;
-    background-color: blueviolet;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
 }
-section#depoimentos #emailrating{
+section#depoimentos #rating1{
+    background-color: blueviolet;
+}
+section#depoimentos #rating2{
+    background-color: rgb(226, 43, 128);
+}
+section#depoimentos #rating3{
+    background-color: darkorange;
+}
+section#depoimentos .emailrating{
     display: inline;
     font-weight: bold;
     color: black;
@@ -158,4 +165,52 @@ section#depoimentos .whitebg p.rate{
     font-size: 1.16em;
     text-align: left;
     padding: 20px;
+}
+section#depoimentos .buybutton{
+    margin-top: 25px;
+}
+section#comprar .textarea{
+    padding: 25px 0px 10px 0px;
+}
+section#comprar .ebookimg{
+    padding-bottom: 10px;
+}
+section#comprar s{
+    color: rgb(200, 0, 0);
+    font-weight: bold;
+}
+section#comprar #price{
+    color: rgb(0, 190, 0);
+    font-weight: bolder;
+    font-size: 1.25em;
+    padding-bottom: 10px;
+}
+footer{
+    background-color: midnightblue;
+    padding: 35px;
+    text-align: center;
+}
+footer p{
+    background-color: rgb(43, 43, 197);
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+footer h4{
+    padding: 25px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(43, 43, 197);
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
+footer a:hover{
+    background-color: rgb(79, 79, 230);
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 60, 255, 0.555);
 }
